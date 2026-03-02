@@ -14,6 +14,8 @@ import {
 } from 'lucide-react';
 import { CSSProperties, useEffect, useMemo, useState } from 'react';
 
+import fashionLogo from './assets/fashion-logo.svg';
+
 type Feature = {
   icon: typeof Sparkles;
   title: string;
@@ -247,11 +249,11 @@ export default function App() {
 
       <header className="topbar">
         <div className="brand-lockup">
-          <div className="brand-mark">F</div>
-          <div>
-            <div className="brand-name">FashionAI</div>
-            <div className="brand-caption">AI Commerce OS</div>
-          </div>
+          <img
+            className="brand-logo"
+            src={fashionLogo}
+            alt="Fashion.ai Data with Style"
+          />
         </div>
 
         <nav className="topbar-nav" aria-label="Principal">
@@ -577,11 +579,11 @@ export default function App() {
         <div className="footer__top">
           <div className="footer__brand">
             <div className="brand-lockup brand-lockup--inverse">
-              <div className="brand-mark">F</div>
-              <div>
-                <div className="brand-name">FashionAI</div>
-                <div className="brand-caption">Premium AI for fashion commerce</div>
-              </div>
+              <img
+                className="brand-logo brand-logo--inverse"
+                src={fashionLogo}
+                alt="Fashion.ai Data with Style"
+              />
             </div>
             <p>
               Inteligência artificial para transformar catálogo, SEO e performance

@@ -121,37 +121,17 @@ img {
 .brand-lockup {
   display: flex;
   align-items: center;
-  gap: 12px;
   flex-shrink: 0;
 }
 
-.brand-lockup--inverse .brand-name,
-.brand-lockup--inverse .brand-caption {
-  color: white;
+.brand-logo {
+  width: 210px;
+  height: auto;
+  display: block;
 }
 
-.brand-mark {
-  display: grid;
-  place-items: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 14px;
-  background: var(--gradient-main);
-  color: white;
-  font-size: 1.05rem;
-  font-weight: 800;
-  box-shadow: var(--shadow-button);
-}
-
-.brand-name {
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-}
-
-.brand-caption {
-  font-size: 0.76rem;
-  color: var(--text);
+.brand-logo--inverse {
+  filter: brightness(0) invert(1);
 }
 
 .topbar-nav,
@@ -1142,6 +1122,10 @@ img {
     top: 12px;
     margin-top: 12px;
     padding: 14px 16px;
+  }
+
+  .brand-logo {
+    width: 180px;
   }
 
   .topbar-actions {
